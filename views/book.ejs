@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Booking</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/book.css" />
+
+
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<form action="/tambah-book" method="post">
+							<div class="row no-margin">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Check In</span>
+										<input class="form-control" type="date" required name="checkin">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Check Out</span>
+										<input class="form-control" type="date" required name="checkout">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<span class="form-label">Room Type</span>
+								<select class="form-control" required name="room">
+									<option value="" selected hidden>Select room type</option>
+									<option value="deluxe-king">Deluxe King</option>
+									<option value="deluxe-double-queen">Deluxe Double Queen</option>
+									<option value="honey-moon-suite">Honey Moon Suite</option>
+								</select>
+								<span class="select-arrow"></span>
+							</div>
+							<div class="form-group">
+								<span class="form-label">Email</span>
+								<input class="form-control" type="email" placeholder="Enter your email" name="email">
+							</div>
+							<div class="form-group">
+								<span class="form-label">Phone</span>
+								<input class="form-control" type="tel" placeholder="Enter your phone number" name="phone">
+							</div>
+							<div class="form-group">
+								<span class="form-label">Nama</span>
+								<input class="form-control" type="tel" placeholder="Enter your name" name="nama">
+							</div>
+							<div class="form-btn">
+								<button type ="submit" class="submit-btn">Continue</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
